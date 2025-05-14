@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Music Player</title>
+
+  <!-- Font Awesome pros ícones -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="player-bg-artwork"></div>
+  <div id="player-bg-layer"></div>
+  <div id="player-container">
+    <div id="player">
+      <div id="player-track">
+        <div id="album-name"></div>
+        <div id="track-name"></div>
+        <div id="track-time">
+          <div id="current-time"></div>
+          <div id="track-length"></div>
+        </div>
+        <div id="seek-bar-container">
+          <div id="seek-time"></div>
+          <div id="s-hover"></div>
+          <div id="seek-bar"></div>
+        </div>
+      </div>
+      <div id="player-content">
+        <div id="album-art">
+          <!-- Glider -->
+          <img src="https://cdn-images.dzcdn.net/images/cover/f817a9a129447189c9bd89f0522a51a4/500x500.jpg" class="active" id="_1" />
+          <!-- Lamp Hatachi No Koi -->
+          <img src="https://cdn-images.dzcdn.net/images/cover/7072c41c8a9c6d6557d57f5670e9a154/0x1900-000000-80-0-0.jpg" id="_2" />
+          <!-- Ichiko Aoba bouquet -->
+          <img src="https://f4.bcbits.com/img/a2751446913_16.jpg" id="_3" />
+          <!-- Kaneko Ayano Hikari No Hou E -->
+          <img src="https://cdns-images.dzcdn.net/images/cover/bb316604d62327f44c4ca8e8dece33e2/1900x1900-000000-80-0-0.jpg" id="_4" />
+          <!-- たま – らんちう -->
+          <img src="https://i.scdn.co/image/ab67616d0000b273c988a71f0d19657eb33245e1" id="_5" />
+          <div id="buffer-box">Buffering ...</div>
+        </div>
+        <div id="player-controls">
+          <div class="control">
+            <div class="button" id="play-previous">
+              <i class="fas fa-backward"></i>
+            </div>
+          </div>
+          <div class="control">
+            <div class="button" id="play-pause-button">
+              <i class="fas fa-play"></i>
+            </div>
+          </div>
+          <div class="control">
+            <div class="button" id="play-next">
+              <i class="fas fa-forward"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+
+</html>
